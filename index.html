@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="화해, hwahae, 화장품, 성분검색, 화해어워드">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>화해</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <div id="wrap"><!-- 전체영역 묶기 -->
+        <header>
+            <div id="header_top"><!-- 헤더 1행 -->
+                <h1><!-- 로고 -->
+                    <a href="./index.html">
+                        <img src="./images/hwahae_logo.png" alt="화해로고">
+                    </a>
+                </h1>
+                <div id="search_bar"><!-- 검색바 -->
+                    <input type="search" placeholder="제품명, 성분명 검색">
+                    <a href="#"><img src="./images/icon_search.png" alt="검색버튼"></a>
+                </div>
+                <div id="user_menu"><!-- 사용자메뉴 -->
+                    <div class="top">
+                        <a href="#" class="lng_setting">
+                            <img src="./images/icon_language.png" alt="지구본">
+                            <p>한국어</p>
+                            <img src="./images/icon_more.png" alt="더보기">
+                        </a>
+                        <a href="#" class="cs_center">고객센터</a>
+                    </div>
+                    <div class="bottom">
+                        <a href=""><img src="./images/icon_user.png" alt=""></a>
+                        <a href=""><img src="./images/icon_heart.png" alt=""></a>
+                        <a href=""><img src="./images/icon_cart.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="header_bottom"><!-- 헤더 2행 -->
+                <div id="shop_category">
+                    <a href="#">
+                        <img src="./images/icon_hamburger.png" alt="더보기아이콘">
+                        <span>쇼핑 카테고리</span>
+                    </a>
+                    <nav>
+                        <ul class="gnb"></ul>
+                    </nav>
+                </div>
+                <a id="popular_search">
+                    <span>1</span>
+                    <span>레티놀<em>| 성분</em></span>
+                </a>
+                <div id="special_menu">
+                    <a href="#">
+                        <img src="./images/icon_award.png" alt="">
+                        <span>어워드</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/icon_ranking.png" alt="">
+                        <span>랭킹</span>
+                    </a>
+                    <a href="#">특가</a>
+                    <a href="#">멤버십 / 쿠폰</a>
+                    <a href="#">이벤트</a>
+                </div>
+            </div>
+        </header>
+    </div>
 </body>
 </html>
