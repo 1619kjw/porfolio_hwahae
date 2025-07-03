@@ -5,6 +5,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="화해, hwahae, 화장품, 성분검색, 화해어워드">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>화해</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -48,9 +54,9 @@
                         <ul class="gnb"></ul>
                     </nav>
                 </div>
-                <a id="popular_search">
+                <a href="#" id="popular_search">
                     <span>1</span>
-                    <span>레티놀<em>| 성분</em></span>
+                    <span>레티놀 <em>| 성분</em></span>
                 </a>
                 <div id="special_menu">
                     <a href="#">
@@ -67,6 +73,37 @@
                 </div>
             </div>
         </header>
+        <main>
+            <!-- 메인 광고배너영역 -->
+            <section class="main_bnr">
+                <!-- 슬라이드 전체 그룹 -->
+                <div class="swiper">
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1"><!-- 개별슬라이드1 -->
+                            <div class="bnr_text">
+                                <em>SALE</em>
+                                <img src="./images/line_banner.png" alt="">
+                                <h2>바디 진정 케어 단독<br>대용량 기획특가!</h2>
+                                <p>닥터 올가 어성초 바디워시</p>
+                                <span>#산뜻한 피부 진정</span>
+                                <span>#당김없는 촉촉함</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">slide2</div>
+                        <div class="swiper-slide slide3">slide3</div>
+                    </div>
+                    <div class="ad_btn_group"><!-- 여기서 부터 다시 하세요~!!! -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pas"></div>
+                        <div class="swiper-button-next"></div>
+                        <button type="button" class="pause"><img src="./images/icon_pause.png" alt=""></button>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
