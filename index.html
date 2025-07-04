@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- 제이쿼리불러오기 -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>화해</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div id="wrap"><!-- 전체영역 묶기 -->
@@ -75,33 +77,62 @@
         </header>
         <main>
             <!-- 메인 광고배너영역 -->
-            <section class="main_bnr">
-                <!-- 슬라이드 전체 그룹 -->
-                <div class="swiper">
-                    <!--필수-->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1"><!-- 개별슬라이드1 -->
-                            <div class="bnr_text">
-                                <em>SALE</em>
-                                <img src="./images/line_banner.png" alt="">
-                                <h2>바디 진정 케어 단독<br>대용량 기획특가!</h2>
-                                <p>닥터 올가 어성초 바디워시</p>
-                                <span>#산뜻한 피부 진정</span>
-                                <span>#당김없는 촉촉함</span>
-                            </div>
+            <div class="swiper main_bnr"><!-- 1.슬라이드 전체 그룹(보이는영역) -->
+                <div class="swiper-wrapper"><!-- 2.부모 -->
+                    <div class="swiper-slide slide1"><!-- 3.개별슬라이드시작 -->
+                        <div class="bnr_text">
+                            <em>SALE</em>
+                            <img src="./images/line_banner.png" alt="">
+                            <h2>바디 진정 케어 단독<br>대용량 기획특가!</h2>
+                            <p>닥터 올가 어성초 바디워시</p>
+                            <span>#산뜻한 피부 진정</span>
+                            <span>#당김없는 촉촉함</span>
                         </div>
-                        <div class="swiper-slide slide2">slide2</div>
-                        <div class="swiper-slide slide3">slide3</div>
                     </div>
-                    <div class="ad_btn_group"><!-- 여기서 부터 다시 하세요~!!! -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pas"></div>
-                        <div class="swiper-button-next"></div>
-                        <button type="button" class="pause"><img src="./images/icon_pause.png" alt=""></button>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-slide slide2">slide2</div>
+                    <div class="swiper-slide slide3">slide3</div>
                 </div>
+            </div>
+            <div class="ad_btn_group"><!-- 여기서 부터 다시 하세요~!!! -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#" class="pause"></a>
+                <a href="#" class="play"></a>
+            </div>
+            <section id="icon_category">
+                <a href="#">
+                    <img src="./images/category_icon/01.png" alt="">
+                    <span>성분검색</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/02.png" alt="">
+                    <span>오늘의 혜택</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/03.png" alt="">
+                    <span>포인트 응모</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/04.png" alt="">
+                    <span>기획전</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/05.png" alt="">
+                    <span>무료체험</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/06.png" alt="">
+                    <span>h.TREND</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/07.png" alt="">
+                    <span>화해pick</span>
+                </a>
+                <a href="#">
+                    <img src="./images/category_icon/08.png" alt="">
+                    <span>화해only</span>
+                </a>
             </section>
         </main>
     </div>
