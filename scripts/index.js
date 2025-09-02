@@ -1,6 +1,6 @@
 const mainSwiper = new Swiper('.main_bnr',{
     direction:'horizontal',
-    autoplay:{delay:1000,},
+    // autoplay:{delay:1000,},
     pagination:{
         el:'.main_bnr + .ad_btn_group .swiper-pagination',//대상설정
         type:'fraction',
@@ -9,7 +9,16 @@ const mainSwiper = new Swiper('.main_bnr',{
         nextEl:'.swiper-button-next',
         prevEl:'.swiper-button-prev',
     },
+    on:{/* custom-pagination 제어 */
+        /* this는 Swiper 인스턴스 */
+        init:function(){update(this);},
+        slideChange:function(){update(this);},
+    },
 });
+function update(swiper){
+    document.querySelector('.current').textContent=String(swiper.realIndex + 1).padStart(2, '0');
+    document.querySelector('.total').textContent=String(swiper.slides.length).padStart(2,'0');
+}
 /* $('.swiper-pause').click(function(){
     mainSwiper.autoplay.stop();
 })

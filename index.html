@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>화해</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/index.js" defer></script>
 </head>
@@ -77,29 +78,36 @@
         </header>
         <main>
             <!-- 메인 광고배너영역 -->
-            <div class="swiper main_bnr"><!-- 1.슬라이드 전체 그룹(보이는영역) -->
-                <div class="swiper-wrapper"><!-- 2.부모 -->
-                    <div class="swiper-slide slide1"><!-- 3.개별슬라이드시작 -->
-                        <div class="bnr_text">
-                            <em>SALE</em>
-                            <img src="./images/line_banner.png" alt="">
-                            <h2>바디 진정 케어 단독<br>대용량 기획특가!</h2>
-                            <p>닥터 올가 어성초 바디워시</p>
-                            <span>#산뜻한 피부 진정</span>
-                            <span>#당김없는 촉촉함</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide2">slide2</div>
-                    <div class="swiper-slide slide3">slide3</div>
-                </div>
-            </div>
-            <div class="ad_btn_group"><!-- 여기서 부터 다시 하세요~!!! -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <a href="#" class="pause"></a>
-                <a href="#" class="play"></a>
-            </div>
+             <section id="mainBnr">
+                 <div class="swiper main_bnr"><!-- 1.슬라이드 전체 그룹(보이는영역) -->
+                     <div class="swiper-wrapper"><!-- 2.부모 -->
+                         <div class="swiper-slide slide1"><!-- 3.개별슬라이드시작 -->
+                             <div class="bnr_text">
+                                 <em>SALE</em>
+                                 <img src="./images/line_banner.png" alt="">
+                                 <h2>바디 진정 케어 단독<br>대용량 기획특가!</h2>
+                                 <p>닥터 올가 어성초 바디워시</p>
+                                 <span>#산뜻한 피부 진정</span>
+                                 <span>#당김없는 촉촉함</span>
+                             </div>
+                         </div>
+                         <div class="swiper-slide slide2">slide2</div>
+                         <div class="swiper-slide slide3">slide3</div>
+                     </div>
+                     <div class="ad_btn_group">
+                         <div class="swiper-button-prev"></div>
+                         <div class="swiper-button-next"></div>
+                         <a href="#" class="pause"></a>
+                         <a href="#" class="play"></a>
+                     </div>
+                 </div>
+                 <!-- 커스텀 페이지네이션은 스와이퍼 외부 작성 -->
+                 <div class="custom-pagination">
+                     <span class="current">01</span>
+                     <span class="slash">/</span>
+                     <span class="total">03</span>
+                 </div>
+             </section>
             <section id="icon_category">
                 <a href="#">
                     <img src="./images/category_icon/01.png" alt="">
