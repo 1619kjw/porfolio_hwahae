@@ -58,7 +58,7 @@
     border-top:1px solid #ddd;
     padding:10px 200px;
     display:flex; justify-content:space-between; align-items:center;
-    border:1px solid red;
+
     position:relative;/* 인기검색어 부모위치기준 */
 }
 #wrap header #header_bottom #shop_category {

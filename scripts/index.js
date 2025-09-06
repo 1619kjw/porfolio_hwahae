@@ -1,3 +1,12 @@
+/* a태그 새로고침 막기 */
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (anchor.getAttribute('href') === '#') {
+        e.preventDefault();
+        }
+    });
+});
+
 const mainSwiper = new Swiper('.main_bnr',{
     direction:'horizontal',
     // autoplay:{delay:1000,},

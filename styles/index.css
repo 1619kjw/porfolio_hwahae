@@ -1,10 +1,13 @@
 body, html {overflow-x:hidden;}
 #wrap {/* 페이지전체묶음 */}
-/* -------------------------메인배너영역 */
-#wrap main {}
+#wrap main {
+    position:relative;/* nav 부모위치기준 */
+}
 #wrap main .swiper {}
+/* -----------------------------------------메인배너영역 */
 #wrap main #mainBnr {
-    position:relative;/* custom-pagination 부모위치기준 */
+    position:relative;
+    /* custom-pagination 부모위치기준 */
 }
 #wrap main #mainBnr .main_bnr {
     position:relative;/* bnr_text, ad_btn_group의 부모위치기준 */ 
@@ -68,7 +71,6 @@ body, html {overflow-x:hidden;}
     width:14px; height:14px;
     margin-top:0;/* 기존 내장값 제거 */
 }
-/* #wrap main  #mainBnr .main_bnr  .ad_btn_group .pause {background-image:url(../images/icon_pause.png);} */
 #wrap main #mainBnr .main_bnr .ad_btn_group .pause {
     background-image:url(../images/icon_pause.png);
     background-repeat:no-repeat;
@@ -95,4 +97,74 @@ body, html {overflow-x:hidden;}
 #wrap main #mainBnr .custom-pagination * {/* pagination의 모든 글자적용 */
     font-size:0.875rem; color:#fff;
 }
-
+/* -----------------------------------------네비 */
+#wrap main nav {
+    background-color:rgba(0,0,0,0.25);
+    position:absolute;/* lnb_bg의 부모위치기준 */
+    left:200px; top:0px; z-index:70;
+    width:180px; height:516px; padding-top:15px;
+}
+#wrap main nav .gnb {}
+#wrap main nav .gnb > li {}
+#wrap main nav .gnb > li > a {
+    padding:11px 30px; display:block;
+    color:#fff; font-weight:500;
+}
+#wrap main nav .gnb > li:hover > a {
+    background-color:#555;
+}
+#wrap main nav .gnb > li .lnb_bg {
+    background-color:#fff; width:160px; height:516px;
+    position:absolute; left:180px; top:0;
+    padding:20px 30px 0 30px;
+    display:none;
+}
+#wrap main nav .gnb > li:hover .lnb_bg {display:block;}
+#wrap main nav .gnb > li .lnb_depth1 {}
+#wrap main nav .gnb > li .lnb_depth1 li {margin-bottom:12px; width:max-content;}
+#wrap main nav .gnb > li .lnb_depth1 li:last-child {margin-bottom:none;}
+#wrap main nav .gnb > li .lnb_depth1 li a {
+    padding:5px 0; display:block; height:24px;
+    font-size:0.875rem; font-weight:500; color:#999;
+}
+#wrap main nav .gnb > li .lnb_depth1 li:hover a {
+    color:#000; border-bottom:1px solid #000;
+}
+/* -----------------------------------------화해어워드 */
+#wrap main #icon_category {
+    display:flex; gap:22px; padding:50px 0;
+    justify-content:center;
+}
+#wrap main #icon_category a {
+    display:flex; flex-flow:column nowrap; gap:10px; align-items:center;
+}
+#wrap main #icon_category a img {}
+#wrap main #icon_category a span {}
+/* -----------------------------------------화해어워드 */
+#wrap main #con1_award {
+    padding:100px 0 100px;
+}
+#wrap main #con1_award .title {
+    margin-left:200px; margin-right:200px;
+    display:flex; gap:20px; align-items:center;
+    padding-bottom:30px;
+    border-bottom:1px solid #ddd;
+}
+#wrap main #con1_award .title h1 {
+    font-size:1.875rem; line-height:1.2;
+}
+#wrap main #con1_award .title h1 span {
+    display:block; font-size:1.25rem; color:#999;
+}
+#wrap main #con1_award .title h1 span em {
+    font-weight:500; color:#999;
+}
+#wrap main #con1_award .title a {}
+#wrap main #con1_award .title a img {}
+/* -----------------------------------------상단가로배너 */
+/* -----------------------------------------화해랭킹 */
+/* -----------------------------------------베스트상품 */
+/* -----------------------------------------기획전 */
+/* -----------------------------------------혜택소개 */
+/* -----------------------------------------브랜드소개 */
+/* -----------------------------------------하단가로배너 */
