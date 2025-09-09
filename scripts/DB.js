@@ -1,7 +1,7 @@
 /* 어워드 영역 DB */
 const awardDB = [
     {
-        tab:new,
+        tab:'new',
         banner:,
         brand:,
         productName:,
@@ -14,7 +14,7 @@ const awardDB = [
         cart:,
     },
     {
-        tab:effect,/* 비건,next, trend */
+        tab:'effect',/* 비건,next, trend */
         banner:,
         brand:,
         productName:,
