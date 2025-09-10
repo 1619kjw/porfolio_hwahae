@@ -5,30 +5,51 @@
 
 
 
-/* 어워드 슬라이드 DB삽입(li생성) */
-const awardContent = document.querySelector('#con1_award .container .contentG');//생성된DB가삽입될부모
+/* 어워드 슬라이드 DB삽입(slide생성) */
+const awardWrapper = document.querySelector('.award .swiper-wrapper');//생성된DB가삽입될부모
 awardMoreContent();//함수호출
 function awardMoreContent(){
-    const liNum = 5;
-    const liStart = 0;
-    let liEnd = liStart + liNum;
-    for(let i=liStart; i<liEnd; i++){
-        const awardLi = document.creatElement('li');
+    const slideNum = 12;
+    const slideStartIndex = 0;
+    let slideEndIndex = slideStartIndex + slideNum;
+
+    for(let i=slideStartIndex; i<slideEndIndex; i++){
+        const newSlide = document.createElement('div');
+        newSlide.className = `swiper-slide slide${i+1}`;
         const item = awardDB[i];
-        awardLi.innerHTML = `
-            <li>
-                <a href="#"><img src="#" alt="카테고리별 배너"></a>
-                <div class="swiper award">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1">slide1</div>
-                        <div class="swiper-slide slide2">slide2</div>
-                        <div class="swiper-slide slide3">slide3</div>
-                    </div>
-                    <div class="swiper-scrollbar"></div>
+        /* 슬라이드 안에 들어가는 태그 쓰기 ↓ */
+        newSlide.innerHTML = `
+            <a class="product" href="#">
+                <img src="${item.src}" alt="${item.brand} + ${item.name}">
+            </a>
+            <div class="info">
+                <div class="field">
+                    <img src="./images/award/award_icon.png" alt="어워드아이콘">
+                    <p>${item.kind}</p>
+                    <em>${item.ranking}</em>
                 </div>
-            </li>
+                <div class="main">
+                    <p>${item.brand}</p>
+                    <em>${item.name}아크닉 토너 210ml</em>
+                </div>
+                <div class="price">
+                    <em>${item.discount}</em>
+                    <p>${item.price}</p>
+                </div>
+                <div class="bottom">
+                    <div class="review">
+                        <img src="./images/common/star_icon.png" alt="별아이콘">
+                        <p>${item.score}</p>
+                        <p>(${item.review})</p>
+                    </div>
+                    <div class="user">
+                        <a class="likeBtn" href="#"><img src="./images/common/wishlist_icon.png" alt="좋아요담기"></a>
+                        <a class="cartBtn" href="#"><img src="./images/common/cart_icon.png" alt="장바구니등록하기"></a>
+                    </div>
+                </div>
+            </div>
         `
-        awardContent.appendChild(awardLi);
+        awardWrapper.appendChild(newSlide);
     }
 }
 

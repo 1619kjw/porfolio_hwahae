@@ -161,6 +161,31 @@ body, html {overflow-x:hidden;}
 }
 #wrap main #con1_award .title a {}
 #wrap main #con1_award .title a img {}
+#wrap main #con1_award .container {
+    display:flex; padding:0 200px 0; margin-top:30px;
+}
+#wrap main #con1_award .container .category {}
+#wrap main #con1_award .container .category #year {
+    outline:none;/* 검은테두리 제거 */ width:67px;
+    background:url(../images/award/down_arrow.png) no-repeat 100% center;/* 가로세로위치 */
+    padding:10px 0; font-size:1.063rem;
+    margin-bottom:40px;
+}
+#wrap main #con1_award .container .category #year option {}
+#wrap main #con1_award .container .category .tabG {
+    display:flex; flex-flow:column nowrap; gap:32px;
+}
+#wrap main #con1_award .container .category .tabG .tab {
+    width:max-content; height:34px;
+    font-weight:500; font-size:1.188rem; color:#999;
+}
+#wrap main #con1_award .container .category .tabG .tab.active {
+    border-bottom:4px solid #444; color:#000; 
+}
+#wrap main #con1_award .container .contentG {}
+#wrap main #con1_award .container .contentG li {
+    display:flex;
+}
 /* -----------------------------------------상단가로배너 */
 /* -----------------------------------------화해랭킹 */
 /* -----------------------------------------베스트상품 */
