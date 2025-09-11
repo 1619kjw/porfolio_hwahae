@@ -30,16 +30,16 @@ function awardMoreContent(){
                 </div>
                 <div class="main">
                     <p>${item.brand}</p>
-                    <em>${item.name}아크닉 토너 210ml</em>
+                    <em>${item.name}</em>
                 </div>
                 <div class="price">
                     <em>${item.discount}</em>
-                    <p>${item.price}</p>
+                    <p>${(item.price).toLocaleString('ko-kr')}원</p>
                 </div>
                 <div class="bottom">
                     <div class="review">
                         <img src="./images/common/star_icon.png" alt="별아이콘">
-                        <p>${item.score}</p>
+                        <em>${item.score}</em>
                         <p>(${item.review})</p>
                     </div>
                     <div class="user">

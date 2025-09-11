@@ -184,8 +184,54 @@ body, html {overflow-x:hidden;}
 }
 #wrap main #con1_award .container .contentG {}
 #wrap main #con1_award .container .contentG li {
+    display:flex; gap:50px;
+}
+#wrap main #con1_award .container .contentG li > a {}
+#wrap main #con1_award .container .contentG li > a img {}
+#wrap main #con1_award .container .contentG .award {}
+#wrap main #con1_award .container .contentG .award .swiper-slide {
+    display:flex; gap:20px;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .product {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .product img {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info {
+    padding:10px 10px 10px 0;
+    display:flex; flex-flow:column nowrap; gap:10px;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .field {
+    display:flex; align-items:center;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .field img {
+    margin-right:10px;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .field p {
+    margin-right:5px; font-size:0.75rem;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .field em {
+    background-color:#DBF6FF; color:#3278B9;
+    padding:3px 5px; font-size:0.75rem;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .main {
     display:flex;
 }
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .main p {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .main em {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .price {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .price em {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .price p {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom {
+    display:flex; justify-content:space-between;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .review {
+    display:flex; align-items:center;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .review img {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .review em {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .review p {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .user {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .user .likeBtn {}
+#wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .user .cartBtn {}
+#wrap main #con1_award .container .contentG .award .swiper-scrollbar {}
 /* -----------------------------------------상단가로배너 */
 /* -----------------------------------------화해랭킹 */
 /* -----------------------------------------베스트상품 */
