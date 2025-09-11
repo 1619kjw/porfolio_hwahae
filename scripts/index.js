@@ -66,9 +66,17 @@ $('.pause_play').click(function(){
 
 
 /* 어워드 영역 스와이퍼 */
+awardMoreContent();
 const awardSwiper = new Swiper('.award',{
-    slidesPerView:3,
-    spaceBetween:20,
     direction:'vertical',
+    slidesPerView:2,
+    // grid: {rows:3, fill:'row'},
+    spaceBetween:20,
+    freeMode:true,
+    mousewheel: true,
+    scrollbar:{
+        el:'#con1_award .award .swiper-scrollbar',
+        draggable:true,
+    },
 });
 

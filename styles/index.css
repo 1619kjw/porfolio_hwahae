@@ -162,7 +162,8 @@ body, html {overflow-x:hidden;}
 #wrap main #con1_award .title a {}
 #wrap main #con1_award .title a img {}
 #wrap main #con1_award .container {
-    display:flex; padding:0 200px 0; margin-top:30px;
+    display:flex; justify-content:space-between;
+    padding:0 200px 0; margin-top:30px;
 }
 #wrap main #con1_award .container .category {}
 #wrap main #con1_award .container .category #year {
@@ -184,15 +185,22 @@ body, html {overflow-x:hidden;}
 }
 #wrap main #con1_award .container .contentG {}
 #wrap main #con1_award .container .contentG li {
-    display:flex; gap:50px;
+    display:flex; gap:50px; align-items:center;
 }
 #wrap main #con1_award .container .contentG li > a {}
 #wrap main #con1_award .container .contentG li > a img {}
-#wrap main #con1_award .container .contentG .award {}
-#wrap main #con1_award .container .contentG .award .swiper-slide {
-    display:flex; gap:20px;
+#wrap main #con1_award .container .contentG .award {
+    width:792px; height:422px; background-color:yellow;
 }
-#wrap main #con1_award .container .contentG .award .swiper-slide .product {}
+#wrap main #con1_award .container .contentG .award .swiper-slide {
+    display:flex; gap:20px; border:1px solid red;
+    width:366px; height:126px;
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide.slide1 {
+    border:1px solid blue; 
+}
+#wrap main #con1_award .container .contentG .award .swiper-slide .product {
+}
 #wrap main #con1_award .container .contentG .award .swiper-slide .product img {}
 #wrap main #con1_award .container .contentG .award .swiper-slide .info {
     padding:10px 10px 10px 0;
@@ -233,9 +241,32 @@ body, html {overflow-x:hidden;}
 #wrap main #con1_award .container .contentG .award .swiper-slide .info .bottom .user .cartBtn {}
 #wrap main #con1_award .container .contentG .award .swiper-scrollbar {}
 /* -----------------------------------------상단가로배너 */
+#wrap main .banner {}
+#wrap main .banner .bnrTop {}
+#wrap main .banner .bnrTop .swiper-wrapper {}
+#wrap main .banner .bnrTop .swiper-wrapper .swiper-slide {}
+#wrap main .banner .bnrTop .swiper-wrapper .swiper-slide a {
+    width:1520px; display:block; margin:0 auto;
+}
+#wrap main .banner .bnrTop .swiper-wrapper .swiper-slide a img {
+    width:100%;
+}
 /* -----------------------------------------화해랭킹 */
+#wrap main #con2_ranking {
+    padding:100px 0;
+}
 /* -----------------------------------------베스트상품 */
 /* -----------------------------------------기획전 */
 /* -----------------------------------------혜택소개 */
 /* -----------------------------------------브랜드소개 */
 /* -----------------------------------------하단가로배너 */
+/* .title {
+    margin-left:200px; margin-right:200px;
+    display:flex; gap:20px; align-items:center;
+    padding-bottom:30px;
+    border-bottom:1px solid #ddd;
+}
+h1 {font-size:1.875rem; line-height:1.2;}
+h1 span {
+    display:block; font-size:1.25rem; color:#999;
+} */
