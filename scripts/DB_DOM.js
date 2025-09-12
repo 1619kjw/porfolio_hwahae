@@ -43,7 +43,7 @@ function awardMoreContent(){
                         <p>(${item.review})</p>
                     </div>
                     <div class="user">
-                        <a class="likeBtn" href="#"><img src="./images/common/wishlist_icon.png" alt="좋아요담기"></a>
+                        <a class="likeBtn" href="#"><img src="./images/common/like_icon.png" alt="좋아요담기"></a>
                         <a class="cartBtn" href="#"><img src="./images/common/cart_icon.png" alt="장바구니등록하기"></a>
                     </div>
                 </div>
